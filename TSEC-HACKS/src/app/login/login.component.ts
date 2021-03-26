@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -7,12 +7,18 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  title: string | undefined
 
   constructor() { }
 
+  onSubmit(emailRef: HTMLInputElement, passwordRef: HTMLInputElement){
+    const email = emailRef.value
+    const psswd = passwordRef.value
+    console.log(email, psswd)
+  }
+
   ngOnInit(): void {
-    this.title = AppComponent.title
   }
 
 }
+
+
