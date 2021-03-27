@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,14 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  loggedin = true
+  @Input() isLogin : boolean = true
   title : string
 
-  isLogin=()=>{return this.loggedin}
+  @Output() static loggedin = new EventEmitter<{isLogin: boolean}>()
 
   constructor() { 
     this.title = AppComponent.title
+    if(LoginComponent.PressedBtn) this.isLogin = false
   }
 
   ngOnInit(): void {

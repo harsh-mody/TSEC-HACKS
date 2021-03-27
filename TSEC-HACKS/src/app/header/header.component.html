@@ -1,48 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-light fluid" style="background-color: #64766A; color: #C0A9BD">
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-    <span class="navbar-toggler-icon"></span>
-
-  </button>
-
-
-<div style="float: right;">
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item dropdown">
-
-        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-          
-          <img src="https://cdn3.iconfinder.com/data/icons/basicolor-essentials/24/041_hamburger_menu-512.png" style="max-width: 30px; padding-top: 7px;">
-
-        </a>
-
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-          <a class="dropdown-item" href="#">Home</a>
-
-          <div class="dropdown-divider"></div>
-
-          <a class="dropdown-item" href="login">Login/Sign Up</a>
-
-        </div>
-
-      </li>
-      
-      <li>
-        <h3>
-          <p style="padding-top: 10px; margin-left: 10px;">{{ title }}</p></h3>
-      </li>
-
-    </ul>
-
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #361999;">
+  <div class="container-fluid">
+    <img src="https://www.pound250.com/wp-content/uploads/2015/05/a-education-Icon.png"
+      style="max-width: 30px; margin-right: 20px;">
+    <a class="navbar-brand" href=""
+      style="border-right: solid 1px white; margin-right: 20px; padding-right: 20px;">Balance Careers</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 60%;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink='' routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>Login/Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>DashBoard</a>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/extcpage" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>EXTC</a>
+            <a class="dropdown-item" routerLink="/techpage" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>Tech</a>
+            <a class="dropdown-item" routerLink="/infotechpage" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>IT</a>
+            <a class="dropdown-item" routerLink="/mechpage" routerLinkActive='active'
+            [routerLinkActiveOptions]='{exact:true}'>Mech</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
-  
-</div>
-
 </nav>
-

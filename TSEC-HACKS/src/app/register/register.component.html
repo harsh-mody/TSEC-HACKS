@@ -33,7 +33,7 @@
       <input type="text" name="phone" placeholder="Phone" [(ngModel)]='pno'/>
       <textarea name="address" placeholder="Address" [(ngModel)]='address'></textarea>
       <input type="button" name="previous" class="btn btn-primary" value="Previous"  (click) = 'onPrevious2()' style="color: #27AE60;"/>
-      <input type="submit" name="submit" class="btn btn-success" [disabled]='!registerForm.valid' value="Submit" (click) = 'onSubmit()'/>
+      <input type="submit" name="submit" class="btn btn-success" [disabled]='!registerForm.valid' value="Submit" (click) = 'onSubmit()' />
     </fieldset>
   </form>
   </div>    
