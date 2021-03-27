@@ -1,52 +1,94 @@
-.container1{
-    margin: 0px;
-    padding: 0px;
-    text-align:center;
-    width: 100%;
-    background-color: #e6e6fae8;
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+body{
+    margin: 0;
+    padding: 0;
 }
-     
-input[type=text], input[type=password]{
-    width:20%;
-    padding:7px 10px;
-    margin: 10px 0;
-    display:inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+
+.container{
+background-image: url('https://images.unsplash.com/photo-1542744094-3a31f272c490?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80');
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+min-width: 100%;
+font-family: 'Arial';
+align-content: center;
 }
-     
-    button{
-    background-color:#4CAF50;
-    width: 10%;
-    padding: 9px 5px;
-    margin:10px 0px 0px 35px;
-    cursor:pointer;
-    border:none;
-    color:#ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    }
-     
-    button:hover{
-    opacity:0.8;
-    }
-     
-    #un,#ps{
-    font-family:'Lato', sans-serif;
-    color: gray;
-    }
- 
- 
-    #container1{
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width:600;
-        height: 300px;
-        text-align: center;
-    }
-     
-    /* Login form css */
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #1cffd9;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #1cffd9;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #1cffd9;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}

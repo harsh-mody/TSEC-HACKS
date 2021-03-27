@@ -1,0 +1,39 @@
+<div style="min-height: 100%;background-color: #f4f2f3" >
+
+<form id="msform" #registerForm= "ngForm">
+    <!-- progressbar -->
+    <ul id="progressbar" >
+      <li [ngClass]='{active: emailPage}' style="color: black">Account Setup</li>
+      <li [ngClass]='{active: socialMediaPage}' style="color: black">Social Profiles</li>
+      <li [ngClass]='{active: personalPage}' style="color: black">Personal Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset *ngIf = 'emailPage'>
+      <h2 class="fs-title" >Create your account</h2>
+      <h3 class="fs-subtitle">This is step 1</h3>
+      <input type="text" name="email" placeholder="Email" [(ngModel)]='email'>
+      <input type="password" name="pass" placeholder="Password" [(ngModel)]='passwd'/>
+      <input type="password" name="cpass" placeholder="Confirm"  [(ngModel)]='passwdcon'/>
+      <input type="button" name="next" class="btn btn-primary" value="Next" (click) = 'onNext()'/>
+    </fieldset>
+    <fieldset *ngIf = 'socialMediaPage'>
+      <h2 class="fs-title" >Social Profiles</h2>
+      <h3 class="fs-subtitle">Your presence on the social network</h3>
+      <input type="text" name="twitter" placeholder="Twitter" [(ngModel)]='twid'/>
+      <input type="text" name="facebook" placeholder="Facebook" [(ngModel)]='faid'/>
+      <input type="text" name="gplus" placeholder="Google Plus" [(ngModel)]='gpid'/>
+      <input type="button" name="previous" class="btn btn-primary" value="Previous"  (click) = 'onPrevious()'/>
+      <input type="button" name="next" class="btn btn-primary" value="Next" (click) = 'onNext2()'/>
+    </fieldset>
+    <fieldset *ngIf = 'personalPage'>
+      <h2 class="fs-title" >Personal Details</h2>
+      <h3 class="fs-subtitle">We will never sell it</h3>
+      <input type="text" name="fname" placeholder="First Name" [(ngModel)]='fname'/>
+      <input type="text" name="lname" placeholder="Last Name" [(ngModel)]='lname'/>
+      <input type="text" name="phone" placeholder="Phone" [(ngModel)]='pno'/>
+      <textarea name="address" placeholder="Address" [(ngModel)]='address'></textarea>
+      <input type="button" name="previous" class="btn btn-primary" value="Previous"  (click) = 'onPrevious2()' style="color: #27AE60;"/>
+      <input type="submit" name="submit" class="btn btn-success" [disabled]='!registerForm.valid' value="Submit" (click) = 'onSubmit()' />
+    </fieldset>
+  </form>
+  </div>    

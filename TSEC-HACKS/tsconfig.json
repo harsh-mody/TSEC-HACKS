@@ -19,9 +19,11 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "types": [ "@types/dom-mediacapture-record" ]
   },
   "angularCompilerOptions": {
+    "allowJs": true,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
